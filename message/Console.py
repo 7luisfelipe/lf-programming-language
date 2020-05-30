@@ -9,7 +9,7 @@ class Console:
     def showConsoleMessage(this):
         if this.type == 'message':
             print(FontColor.CBLACK + 'Message: '+this.message)
-        elif this.type == 'sucess':
+        elif this.type == 'success':
             print(FontColor.CGREEN + 'Sucess: '+this.message)
         elif this.type == 'alert':
             print(FontColor.CYELLOW + 'Alert: '+this.message)
