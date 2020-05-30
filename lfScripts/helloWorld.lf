@@ -1,0 +1,20 @@
+console.alert 'Iniciando com LF'
+
+console ''
+loop(10){
+    console.sucess 'loop MSG'
+    console.alert 'java'
+}
+
+console ''
+loop(3){
+    console.sucess 'loop2'
+    console.alert 'Python'
+}
+
+console ''
+console.error 'Hello World com LF'
+console.alert 'java'
+console.message 'python'
+console.alert 'c++'
+console.sucess 'Fim da aplicação com LF'
