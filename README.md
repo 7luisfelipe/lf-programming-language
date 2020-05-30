@@ -11,7 +11,7 @@ Uma linguagem de programação com fins acadêmicos.
 - console 'Console'
 
 ### Loop
-loop(10){
-    console.sucess 'loop MSG'
-    console.alert 'java'
+loop(10){ <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.sucess 'loop 10 vezes'<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.alert 'java'<br/>
 }
