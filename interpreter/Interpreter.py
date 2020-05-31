@@ -49,14 +49,13 @@ class Interpreter:
                                            ]
 
                             # Busca o comando a ser executado dentro do loop - abre { do loop no script
-                            idx_start_loop_script = this.script.index('{', this.script.index(l))
-                            idx_end_loop_script = this.script.index('}', this.script.index(l))
+                            idx_start_loop_script = this.script.index('->', this.script.index(l))
+                            idx_end_loop_script = this.script.index('<-', this.script.index(l))
                             #Loop(int(quantity_str), (this.script[idx_start_loop_script + 1:idx_end_loop_script]))
 
-
                             for i in range(int(quantity_str)):
+                                scr = (this.script[idx_start_loop_script + 1:idx_end_loop_script])
                                 Interpreter((this.script[idx_start_loop_script + 1:idx_end_loop_script]))
-
                             break
                         elif it == '+':
                             #Busca os valores para somar
