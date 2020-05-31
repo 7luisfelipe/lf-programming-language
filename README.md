@@ -11,10 +11,10 @@ Uma linguagem de programação com fins acadêmicos.
 - console 'Console'
 
 ### Loop
-loop(10){ <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.sucess 'loop 10 vezes'<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.alert 'java'<br/>
-}
+loop(2)-> <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ {10,2} <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* {6,2}  <br/>
+<-
 
 ### Operações Matemáticas
 - Adição
