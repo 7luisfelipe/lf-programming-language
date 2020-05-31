@@ -1,20 +1,14 @@
+console.success 'Iniciando com LF'
+loop(2)->
+    + {10,2}
+    * {6,2}
+<-
+
+console ''
 + {7,3,4}
 * {7,3,2}
 / {70,2,3}
 - {50,20,10}
-console.alert 'Iniciando com LF'
-
-console ''
-loop(10){
-    console.success 'loop MSG'
-    console.alert 'java'
-}
-
-console ''
-loop(3){
-    console.success 'loop2'
-    console.alert 'Python'
-}
 
 console ''
 console.error 'Hello World com LF'
