@@ -10,7 +10,7 @@ class Console:
         if this.type == 'message':
             print(FontColor.CBLACK + 'Message: '+this.message)
         elif this.type == 'success':
-            print(FontColor.CGREEN + 'Sucess: '+this.message)
+            print(FontColor.CGREEN + 'Success: '+this.message)
         elif this.type == 'alert':
             print(FontColor.CYELLOW + 'Alert: '+this.message)
         elif this.type == 'error':

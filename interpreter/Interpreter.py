@@ -1,5 +1,6 @@
 import re
 from message.Console import Console
+from mathematics.Math import Math
 
 class Interpreter:
     def __init__(this, script):
@@ -56,6 +57,46 @@ class Interpreter:
                             for i in range(int(quantity_str)):
                                 Interpreter((this.script[idx_start_loop_script + 1:idx_end_loop_script]))
 
+                            break
+                        elif it == '+':
+                            #Busca os valores para somar
+                            idx_start_script = this.script.index('{', this.script.index(l))
+                            idx_end_script = this.script.index('}', this.script.index(l))
+
+                            numbers = this.script[idx_start_script+1:idx_end_script]
+                            numbers = numbers.split(',')
+                            r = Math(numbers).addition()
+                            Console('', '+Result: '+str(r))
+                            break
+                        elif it == '*':
+                            #Busca os valores para somar
+                            idx_start_script = this.script.index('{', this.script.index(l))
+                            idx_end_script = this.script.index('}', this.script.index(l))
+
+                            numbers = this.script[idx_start_script+1:idx_end_script]
+                            numbers = numbers.split(',')
+                            r = Math(numbers).multiplication()
+                            Console('', '*Result: '+str(r))
+                            break
+                        elif it == '/':
+                            #Busca os valores para somar
+                            idx_start_script = this.script.index('{', this.script.index(l))
+                            idx_end_script = this.script.index('}', this.script.index(l))
+
+                            numbers = this.script[idx_start_script+1:idx_end_script]
+                            numbers = numbers.split(',')
+                            r = Math(numbers).division()
+                            Console('', '/Result: '+str(r))
+                            break
+                        elif it == '-':
+                            #Busca os valores para somar
+                            idx_start_script = this.script.index('{', this.script.index(l))
+                            idx_end_script = this.script.index('}', this.script.index(l))
+
+                            numbers = this.script[idx_start_script+1:idx_end_script]
+                            numbers = numbers.split(',')
+                            r = Math(numbers).subtraction()
+                            Console('', '-Result: '+str(r))
                             break
                     # s.script = s.script.replace(l,'')
                     # ultimo caractere da linha
